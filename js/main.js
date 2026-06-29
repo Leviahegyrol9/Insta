@@ -2,7 +2,7 @@ const followers = JSON.parse(sessionStorage.getItem("followers"));
 const following = JSON.parse(sessionStorage.getItem("following"));
 
 if (!followers || !following) {
-    location.href = "../index.html";
+    location.href = "index.html";
 }
 
 const followerList = followers.map(user => ({
