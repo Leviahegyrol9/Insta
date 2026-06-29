@@ -47,6 +47,6 @@ function ChooseFile(button){
 function checkFiles() {
     if (sessionStorage.getItem("followers") &&
         sessionStorage.getItem("following")) {
-        location.href = "../main.html";
+        location.href = "main.html";
     }
 }
