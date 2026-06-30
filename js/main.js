@@ -29,7 +29,7 @@ notFollowingBack.forEach((element, index) => {
     html += `
     <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card">
-            <img src="../img/instagram.png"/>
+            <img src="img/instagram.png"/>
             <div class="card-body">
                 <div class="content">
                     <div>
