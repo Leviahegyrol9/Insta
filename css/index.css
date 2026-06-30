@@ -18,7 +18,7 @@
 button {
   border: none;
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.8rem;
   background-color: #488aec;
   color: #ffffff;
   font-size: 0.7rem;
@@ -37,17 +37,65 @@ button {
     0 2px 4px -1px #488aec17;
   transition: all 0.6s ease;
 }
-
-button:hover {
-  box-shadow:
-    0 10px 15px -3px #488aec4f,
-    0 4px 6px -2px #488aec17;
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn-Container {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  background-color: #1d2129;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-Container {
+  width: 45px;
+  height: 45px;
+  background-color: #f59aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #1d2129;
+}
+.text {
+  width: calc(170px - 45px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+}
+.icon-Container svg {
+  transition-duration: 1.5s;
+}
+.Btn-Container:hover .icon-Container svg {
+  transition-duration: 1.5s;
+  animation: arrow 1s linear infinite;
 }
 
-button:focus,
-button:active {
-  opacity: 0.85;
-  box-shadow: none;
+@media (hover: hover) and (pointer: fine) {
+      @keyframes arrow {
+        0% {
+          opacity: 0;
+          margin-left: 0px;
+        }
+        100% {
+          opacity: 1;
+          margin-left: 10px;
+        }
+      }
+
+    .Btn-Container:hover {
+        box-shadow: 7px 11px 27px 9px rgba(0, 0, 0, 0.7);
+        transform: scale(1.05);
+      }
 }
 
 button svg {

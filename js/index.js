@@ -50,3 +50,7 @@ function checkFiles() {
         location.href = "main.html";
     }
 }
+
+function OpenTab(){
+    window.open("https://accountscenter.instagram.com/info_and_permissions/dyi/", "_blank");
+}
